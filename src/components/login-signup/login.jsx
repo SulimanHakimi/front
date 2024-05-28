@@ -2,7 +2,7 @@ import React from "react";
 
 function Login() {
   const google = () => {
-    window.open("http://localhost:4000/auth/google", "_self");
+    window.open("https://back-5uqh7ujxq-sulimanhakimis-projects.vercel.app/auth/google", "_self");
   };
 
   return (
