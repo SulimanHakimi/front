@@ -1,0 +1,73 @@
+const house = [
+  {
+    id: 1,
+    isSold: false,
+    SellerName: "Ahmad",
+    rooms:4,
+    baths:1,
+    area:450,
+    Price:500000,
+    type:"فروشی",
+    PhoneNo: "0784966018",
+    adress: "کابل افغانستان تپه دافع هوا کارته نو",
+    image:
+      "https://maskanyab.af/wp-content/uploads/2024/05/Four-room-house-for-sale-in-Qala-e-Khatir-Kabul-4-592x444.jpg",
+  },
+  {
+    id: 2,
+    isSold: true,
+    rooms:5,
+    baths:2,
+    area:240,
+    type:"کرایی",
+    Price: 1350000,
+    SellerName: "Ahmad",
+    PhoneNo: "0706719116",
+    adress: "کابل افغانستان شهر نو سرک ۱۲",
+    image:
+      "https://maskanyab.af/wp-content/uploads/2024/05/House-for-sale-in-Qala-e-Morad-Beg-Kabul-2-1-592x444.jpg",
+  },
+  {
+    id: 3,
+    isSold: false,
+    rooms:3,
+    baths:1,
+    area:120,
+    type:"کرایی",
+    Price: 700000,
+    SellerName: "Ahmad",
+    PhoneNo: "0784966018",
+    adress: "کابل افغانستان قلعه فتح الله سرک ۵",
+    image:
+      "https://maskanyab.af/wp-content/uploads/2024/05/Four-room-house-for-mortgage-in-Taimani-Project-3-578x444.jpg",
+  },
+  {
+    id: 4,
+    isSold: true,
+    rooms:10,
+    baths:3,
+    area:450,
+    Price:1300000,
+    type:"فروشی",
+    SellerName: "Ahmad",
+    PhoneNo: "0784966018",
+    adress: "هرات افغانستان  جبریل بخش اول",
+    image:
+      "https://maskanyab.af/wp-content/uploads/2024/05/Two-floor-house-for-sale-Sar-e-Kotal-Khair-Khana-2-592x444.jpg",
+  },
+  {
+    id: 5,
+    isSold: false,
+    rooms:3,
+    baths:1,
+    area:230,
+    Price:590000,
+    type:"گرویی",
+    SellerName: "Ahmad",
+    PhoneNo: "0784966018",
+    adress: "کابل افغانستان شاه شهید حوزه هشتم امنیتی",
+    image:
+      "https://maskanyab.af/wp-content/uploads/2024/05/Three-room-house-for-sale-in-Qasaba-Kabul-592x444.jpg",
+  },
+];
+export default house;
