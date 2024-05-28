@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     const getUser = () => {
-      fetch("https://back-5uqh7ujxq-sulimanhakimis-projects.vercel.app/auth/login/success", {
+      fetch("https://back-jade-eight.vercel.app/auth/login/success", {
         method: "GET",
         credentials: "include",
         headers: {

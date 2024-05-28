@@ -3,7 +3,7 @@ import styles from "./nav.module.css";
 import { Link } from "react-router-dom";
 function Nav(user) {
   const logout = () => {
-    window.open("https://back-5uqh7ujxq-sulimanhakimis-projects.vercel.app/auth/logout", "_self");
+    window.open("https://back-jade-eight.vercel.app/auth/logout", "_self");
   };
   return (
     <>
