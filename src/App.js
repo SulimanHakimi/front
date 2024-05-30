@@ -2,15 +2,20 @@ import Home from "./components/home/home";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./components/login-signup/login";
 import Signup from "./components/login-signup/signup";
+import About from "./components/about-us/about";
+import Profile from "./components/profile/profile";
 import Nav from "./components/nav/nav";
-import { useState,useEffect } from "react";
+import HouseDatils from "./components/cards/houseDatils";
+import CarsDatils from "./components/cards/carDatils";
+
+import { useState, useEffect } from "react";
 
 function App() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
     const getUser = () => {
-      fetch("https://back-jade-eight.vercel.app/auth/login/success", {
+      fetch("http://localhost:4000/auth/login/success", {
         method: "GET",
         credentials: "include",
         headers: {
@@ -36,11 +41,32 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <Nav user={user}/>
+        <Nav user={user} />
         <Routes>
           <Route path="/" element={<Home user={user} />} />
-          <Route path="/login" element={user?<Navigate to={"/"}/>:<Login />} />
-          <Route path="/sign-up" element={user?<Navigate to={"/"}/>:<Signup />} />
+          <Route path="/about-us" element={<About user={user} />} />
+          <Route
+            path="/login"
+            element={user ? <Navigate to={"/"} /> : <Login />}
+          />
+          <Route
+            path="/house/:id"
+            element={user ? <HouseDatils /> : <Navigate to={"/login"} />}
+          />
+          <Route
+            path="/car/:id"
+            element={user ? <CarsDatils /> : <Navigate to={"/login"} />}
+          />
+          <Route
+            path="/profile"
+            element={
+              user ? <Profile user={user} /> : <Navigate to={"/login"} />
+            }
+          />
+          <Route
+            path="/sign-up"
+            element={user ? <Navigate to={"/"} /> : <Signup />}
+          />
         </Routes>
       </div>
     </BrowserRouter>

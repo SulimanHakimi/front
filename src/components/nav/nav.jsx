@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./nav.module.css";
 import { Link } from "react-router-dom";
+import { FaBars } from "react-icons/fa6";
+
 function Nav(user) {
   const logout = () => {
-    window.open("https://back-jade-eight.vercel.app/auth/logout", "_self");
+    window.open("http://localhost:4000/auth/logout", "_self");
   };
   return (
     <>
@@ -12,20 +14,24 @@ function Nav(user) {
       >
         <div className="flex items-center gap-5">
           <img
+            className="lg:block hidden"
             width="80"
             src="https://hakimi53.com/wp-content/uploads/2023/06/cropped-Hakimi-TM-Logo.png"
             alt=""
           />
 
           <div className="flex flex-col gap-2 text-right">
-            <Link to="/" className="text-2xl font-semibold">
+            <Link to="/" className="lg:text-2xl text-xl font-semibold">
               حکیمی هاوس
             </Link>
             <span className="text-sm">هدف ما ارامش و راحتی شماست</span>
           </div>
         </div>
-        <div>
-          <ul className="flex items-center gap-14">
+        <div className="lg:hidden flex">
+          <FaBars size={"2em"} className="cursor-pointer" />
+        </div>
+        <div className="hidden lg:flex">
+          <ul className="lg:flex  items-center gap-14">
             <li className={styles.dropdown}>
               <button className={styles.dropbtn}>کرایی</button>
               <div className={styles.dropdowncontent}>
@@ -112,30 +118,39 @@ function Nav(user) {
                 </Link>
               </div>
             </li>
+            <Link to={"/about-us"} className={styles.dropdown}>
+              درباره ما
+            </Link>
           </ul>
         </div>
-        <div className="flex gap-5 items-center">
+        <div className="lg:flex hidden gap-5 items-center">
           {user.user ? (
             <>
-          <img src={user.user.photos[0].value} className="cursor-pointer w-10 h-10 rounded-full" alt="" />
-            <Link
-              onClick={logout}
-              className="bg-red-500 text-white px-3 py-2 rounded-lg"
-            >
-              خروج از حساب
-            </Link>
+              <Link to={"/profile"}>
+                <img
+                  src={user.user.photos[0].value}
+                  className="cursor-pointer w-10 h-10 rounded-full"
+                  alt=""
+                />
+              </Link>
+              <Link
+                onClick={logout}
+                className="bg-gray-300 text-white px-3 py-2 rounded"
+              >
+                خروج از حساب
+              </Link>
             </>
           ) : (
             <>
               <Link
                 to="/login"
-                className="bg-blue-500 text-white px-3 py-2 rounded-lg"
+                className="text-black border hover:border-white hover:text-white hover:bg-gray-400 border-gray-500 duration-500 px-3 py-2"
               >
                 ورود به حساب
               </Link>
               <Link
                 to="/sign-up"
-                className="bg-green-500 text-white px-3 py-2 rounded-lg"
+                className="text-black border hover:border-white hover:text-white hover:bg-gray-400 border-gray-500 duration-500 px-3 py-2"
               >
                 حساب جدید
               </Link>

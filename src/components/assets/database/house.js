@@ -25,7 +25,7 @@ const house = [
     PhoneNo: "0706719116",
     adress: "کابل افغانستان شهر نو سرک ۱۲",
     image:
-      "https://maskanyab.af/wp-content/uploads/2024/05/House-for-sale-in-Qala-e-Morad-Beg-Kabul-2-1-592x444.jpg",
+      "https://maskanyab.af/wp-content/uploads/2024/05/Four-room-house-for-rent-in-Old-Taimani-Kabul-592x444.jpg",
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const house = [
     PhoneNo: "0784966018",
     adress: "کابل افغانستان قلعه فتح الله سرک ۵",
     image:
-      "https://maskanyab.af/wp-content/uploads/2024/05/Four-room-house-for-mortgage-in-Taimani-Project-3-578x444.jpg",
+      "https://maskanyab.af/wp-content/uploads/2024/05/Six-room-house-for-sale-in-District-6-Kabul-459x444.jpg",
   },
   {
     id: 4,

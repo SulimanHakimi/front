@@ -6,9 +6,9 @@ function Home(user) {
   return (
     <div>
       <div className="user-select-none">
-        <div className="h-[500px] bg-center bg-cover">
-          <div className="flex h-full backdrop-blur-sm w-full justify-end">
-            <div className="w-1/2 text-right flex flex-col justify-center gap-5 px-10">
+        <div className="lg:h-[500px] h-fit bg-center bg-cover">
+          <div className="flex flex-col h-[850px] lg:flex-row w-full justify-center">
+            <div className="lg:w-1/2 w-full h-1/2 lg:h-[500px] flex flex-col justify-center gap-5 px-5 lg:px-10">
               <h1 className="text-4xl leading-[1.5em] font-semibold">
                 حکیمی هاوس
               </h1>
@@ -17,13 +17,13 @@ function Home(user) {
                 گرفتن سند شان تا اخرین مرحله همکار با شماست
               </span>
               <Link
-                to={"/sign-up"}
-                className="rounded-md hover:bg-opacity-80 w-fit text-white px-5 py-3 bg-black hover:bg-opacity-50 font-semibold"
+                to={"/login"}
+                className="rounded-md w-fit text-white px-5 py-3 bg-black hover:bg-opacity-50 font-semibold"
               >
                 با ما بپیوندید
               </Link>
             </div>
-            <div className="w-1/2 flex flex-col">
+            <div className="lg:w-1/2 w-full h-1/2 lg:h-[500px] flex flex-col">
               <div className="flex justify-center items-center h-2/4">
                 <h2 className="text-3xl font-semibold">
                   جستجو به اساس احتیاجات شما

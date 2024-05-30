@@ -2,45 +2,50 @@ import React from "react";
 
 function Login() {
   const google = () => {
-    window.open("https://back-jade-eight.vercel.app/auth/google", "_self");
+    window.open("http://localhost:4000/auth/google", "_self");
+  };
+  const facebook = () => {
+    window.open("http://localhost:4000/auth/facebook", "_self");
   };
 
   return (
     <>
-      <div className="flex justify-center bg-slate-200 items-center min-h-screen">
-        <div className="w-[485px] flex flex-col justify-evenly gap-2 px-14 py-10 shadow-lg rounded bg-white min-h-4/5">
+      <div className="flex justify-center items-center h-fit">
+        <div className="w-full flex flex-col justify-evenly p-16 bg-white">
           <div className="">
-            <h1 className="font-bold text-2xl">سلام خوش امدید به حکیمی هاوس</h1>
+            <h1 className="font-bold text-3xl">سلام خوش امدید به حکیمی هاوس</h1>
             <div className="flex items-center gap-1">
               <p>برای ورود به حساب یک طریقه انتخاب کنید</p>{" "}
-              <a className="text-sm underline text-blue-400" href="/sign-up">
+              <a className="text-lg underline text-blue-400" href="/sign-up">
                 ایجاد حساب
               </a>
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col my-5 w-3/3">
             <input
               type="email"
-              className="rounded-md w-84 my-3 border px-4 py-3 focus:border-slate-500 outline-none"
+              className="rounded-md my-3 border px-4 py-3 focus:border-slate-500 outline-none"
               placeholder="ایمیل"
             />
             <input
               type="password"
-              className="rounded-md w-84 my-3 border px-4 py-3 focus:border-slate-500 outline-none "
+              className="rounded-md my-3 border px-4 py-3 focus:border-slate-500 outline-none "
               placeholder="گذرواژه"
             />
           </div>
           <div className="flex justify-between items-center ">
-            <p className="w-2/5">یا توسط</p>
-            <span className="h-[1px] w-3/5 bg-[#D9D9D9]"></span>
+            <p className="w-1/6 text-xl">یا توسط</p>
+            <span className="h-[1px] w-5/6 bg-[#D9D9D9]"></span>
           </div>
-          <div className="flex justify-evenly my-4">
-            <button
-              className="py-2 px-5 flex items-center gap-5"
-              onClick={google}
-            >
-              <span className="text-xl">ورود با حساب گوگل</span>
-              <i className="fa-brands fa-google fa-3x"></i>
+          <div className="flex justify-center gap-10 my-4">
+            <button className="py-2 px-5" onClick={google}>
+              <i className="fa-brands fa-google hover:scale-125 duration-500 fa-3x"></i>
+            </button>
+            <button className="py-2 px-5">
+              <i className="fa-brands fa-apple hover:scale-125 duration-500 fa-3x"></i>
+            </button>
+            <button className="py-2 px-5" onClick={facebook}>
+              <i className="fa-brands fa-facebook hover:scale-125 duration-500 fa-3x"></i>
             </button>
           </div>
           <div className="w-full flex justify-center ">

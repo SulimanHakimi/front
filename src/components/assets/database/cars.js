@@ -12,7 +12,7 @@ const cars = [
     PhoneNo: "0784966018",
     adress: "کابل افغانستان گولایی دواخانه موتر فروشی حکیمی",
     image:
-      "https://scontent.fkbl6-1.fna.fbcdn.net/v/t39.30808-6/379837150_282706021270832_9178066466584993961_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ug3X8RVO3wMQ7kNvgGcoSHU&_nc_ht=scontent.fkbl6-1.fna&oh=00_AYDx_kK-StAvXj94aO782jTi9-oKwGrp4rE8odA42h6whA&oe=6654D579",
+      "https://www.azadbazar.af/Images/Sell/3769648326.jpg",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const cars = [
     PhoneNo: "0706719116",
     adress: "کابل افغانستان گولایی دواخانه موتر فروشی حکیمی",
     image:
-      "https://scontent.fkbl6-1.fna.fbcdn.net/v/t39.30808-6/322174870_723086495676022_6286926719494434724_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=hiKdQpH9H8oQ7kNvgEISSRd&_nc_ht=scontent.fkbl6-1.fna&oh=00_AYAylAqCN1cuxFKKbEugS81OfytlRa-TP_JazNhjauZEsw&oe=6654C2C6",
+      "https://www.azadbazar.af/Images/Sell/1107914996.jpg",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const cars = [
     PhoneNo: "0784966018",
     adress: "کابل افغانستان گولایی دواخانه موتر فروشی حکیمی",
     image:
-      "https://scontent.fkbl6-1.fna.fbcdn.net/v/t39.30808-6/311569897_117270901152325_700035578306603599_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ItTBECE9xLUQ7kNvgE3skoY&_nc_ht=scontent.fkbl6-1.fna&oh=00_AYAsoRmlq1N0hvmQc2HqfciyAs9MPDOlp4UHEhVDq5iQOw&oe=6654C789",
+      "https://www.azadbazar.af/Images/Sell/1080306960.jpeg",
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ const cars = [
     PhoneNo: "0784966018",
     adress: "کابل افغانستان گولایی دواخانه موتر فروشی حکیمی",
     image:
-      "https://scontent.fkbl6-1.fna.fbcdn.net/v/t39.30808-6/306970614_102220479324034_2945566384519656857_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=HKCcWrQA7fMQ7kNvgGsc6fp&_nc_ht=scontent.fkbl6-1.fna&oh=00_AYAf7IGCHyAMR_agPRDU4PJsi-WUuNcK6kcNNgTasUBhEg&oe=6654C028",
+      "https://www.azadbazar.af/Images/Sell/7536759231.jpg",
   },
   {
     id: 5,
@@ -72,7 +72,7 @@ const cars = [
     PhoneNo: "0784966018",
     adress: "کابل افغانستان گولایی دواخانه موتر فروشی حکیمی",
     image:
-      "https://scontent.fkbl6-1.fna.fbcdn.net/v/t39.30808-6/308445835_108283752051040_6105469620832606860_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=COdd_qWCXeEQ7kNvgH3P70u&_nc_ht=scontent.fkbl6-1.fna&oh=00_AYAS8xiqGfkVxMfQH9X-GNHomTY7aCTJMmw1nD8hkFwclQ&oe=6654B065",
+      "https://www.azadbazar.af/Images/Sell/2572636704.jpg",
   },
 ];
 export default cars;

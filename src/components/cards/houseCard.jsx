@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function HouseCard(data) {
   return (
-    <div className="card relative max-h-[360px] shadow-lg w-72 bg-white rounded-lg overflow-hidden">
+    <div className="card relative max-h-[360px] shadow w-80 lg:w-72 bg-white rounded overflow-hidden">
       <div className="h-[190px]">
       <div
           className="w-full h-full bg-cover"
@@ -35,7 +35,7 @@ function HouseCard(data) {
         <span className="text-sm">
           <strong>آدرس:</strong>{data.data.adress}
         </span>
-        <Link to={`/house/${data.data.id}`} className="px-4 text-center py-2 rounded bg-slate-100">جزيیات بیشتر</Link>
+        <Link to={`/house/${data.data.id-1}`} className="px-4 text-center py-2 rounded bg-slate-100">جزيیات بیشتر</Link>
       </div>
     </div>
   );
