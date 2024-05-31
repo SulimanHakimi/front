@@ -7,34 +7,38 @@ import Profile from "./components/profile/profile";
 import Nav from "./components/nav/nav";
 import HouseDatils from "./components/cards/houseDatils";
 import CarsDatils from "./components/cards/carDatils";
-
-import { useState, useEffect } from "react";
+import { useState, useEffect, } from "react";
 
 function App() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const getUser = () => {
-      fetch("http://localhost:4000/auth/login/success", {
-        method: "GET",
-        credentials: "include",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Credentials": true,
-        },
-      })
-        .then((response) => {
-          if (response.status === 200) return response.json();
-          throw new Error("authentication has been failed!");
-        })
-        .then((resObject) => {
+    const getUser = async () => {
+      try {
+        const response = await fetch(
+          "http://localhost:4000/auth/login/success",
+          {
+            method: "GET",
+            credentials: "include",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+              "Access-Control-Allow-Credentials": true,
+            },
+          }
+        );
+
+        if (response.status === 200) {
+          const resObject = await response.json();
           setUser(resObject.user);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+        } else {
+          throw new Error("Authentication has failed!");
+        }
+      } catch (err) {
+        console.log(err);
+      }
     };
+
     getUser();
   }, []);
 

@@ -23,18 +23,18 @@ function Profile({ user }) {
         </div>
         <ul class="py-6 mt-2 w-full  text-gray-700 flex items-center justify-evenly">
           <li class="flex flex-col items-center justify-around">
-            <div>15</div>
+            <div>0</div>
 
             <span className="font-semibold">دنبال شده</span>
           </li>
           <li class="flex flex-col items-center justify-between">
             {" "}
-            <div>10.1k</div>
+            <div>0</div>
             <span className="font-semibold">دنبال کننده ها</span>
           </li>
 
           <li class="flex flex-col items-center justify-around">
-            <div>2.5k</div>
+            <div>0</div>
             <span className="font-semibold">پسند ها</span>
           </li>
         </ul>
