@@ -38,12 +38,14 @@ function Profile({ user }) {
             <span className="font-semibold">پسند ها</span>
           </li>
         </ul>
-        <div className="min-h-96 w-full lg:px-20 px-5 grid lg:gap-0 gap-2 grid-cols-2 lg:grid-cols-5 mt-10 justify-items-center">
-          <div className="lg:w-60 w-56 h-64 lg:h-72 border bg-cover object-cover cursor-pointer lg:hover:scale-105 duration-500  bg-[url('https://maskanyab.af/wp-content/uploads/2024/05/Four-room-house-for-sale-in-Qala-e-Khatir-Kabul-4-592x444.jpg')]"></div>
-          <div className="lg:w-60 w-56 h-64 lg:h-72 border bg-cover object-cover cursor-pointer lg:hover:scale-105 duration-500 bg-[url('https://www.azadbazar.af/Images/Sell/1080306960.jpeg')]"></div>
-          <div className="lg:w-60 w-56 h-64 lg:h-72 border bg-cover object-cover cursor-pointer lg:hover:scale-105 duration-500 bg-[url('https://www.azadbazar.af/Images/Sell/2572636704.jpg')]"></div>
-          <div className="lg:w-60 w-56 h-64 lg:h-72 border bg-cover object-cover cursor-pointer lg:hover:scale-105 duration-500 bg-[url('https://maskanyab.af/wp-content/uploads/2024/05/Six-room-house-for-sale-in-District-6-Kabul-459x444.jpg')]"></div>
-          <div className="lg:w-60 w-56 h-64 lg:h-72 border bg-cover object-cover cursor-pointer lg:hover:scale-105  duration-500 bg-[url('https://maskanyab.af/wp-content/uploads/2024/05/Three-room-house-for-sale-in-Qasaba-Kabul-592x444.jpg')]"></div>
+        <div className="min-h-96 w-full lg:px-24 px-5 grid lg:gap-0 gap-2 grid-cols-2 lg:grid-cols-5 my-10 justify-items-center">
+          <div className="lg:w-64 w-56 h-64 lg:h-80 border bg-cover object-cover cursor-pointer lg:hover:scale-105 duration-500  bg-[url('https://maskanyab.af/wp-content/uploads/2024/05/Four-room-house-for-sale-in-Qala-e-Khatir-Kabul-4-592x444.jpg')]"></div>
+          <div className="lg:w-64 w-56 h-64 lg:h-80 border bg-cover object-cover cursor-pointer lg:hover:scale-105 duration-500 bg-[url('https://www.azadbazar.af/Images/Sell/1080306960.jpeg')]"></div>
+          <div className="lg:w-64 w-56 h-64 lg:h-80 border bg-cover object-cover cursor-pointer lg:hover:scale-105 duration-500 bg-[url('https://www.azadbazar.af/Images/Sell/2572636704.jpg')]"></div>
+          <div className="lg:w-64 w-56 h-64 lg:h-80 border bg-cover object-cover cursor-pointer lg:hover:scale-105 duration-500 bg-[url('https://maskanyab.af/wp-content/uploads/2024/05/Six-room-house-for-sale-in-District-6-Kabul-459x444.jpg')]"></div>
+          <div className="lg:w-64 w-56 h-64 lg:h-80 border bg-cover object-cover cursor-pointer lg:hover:scale-105 duration-500 bg-[url('https://maskanyab.af/wp-content/uploads/2024/05/Six-room-house-for-sale-in-District-6-Kabul-459x444.jpg')]"></div>
+          <div className="lg:w-64 w-56 h-64 lg:h-80 border bg-cover object-cover cursor-pointer lg:hover:scale-105 duration-500 bg-[url('https://maskanyab.af/wp-content/uploads/2024/05/Six-room-house-for-sale-in-District-6-Kabul-459x444.jpg')]"></div>
+          <div className="lg:w-64 w-56 h-64 lg:h-80 border bg-cover object-cover cursor-pointer lg:hover:scale-105  duration-500 bg-[url('https://maskanyab.af/wp-content/uploads/2024/05/Three-room-house-for-sale-in-Qasaba-Kabul-592x444.jpg')]"></div>
         </div>
       </div>
     </div>

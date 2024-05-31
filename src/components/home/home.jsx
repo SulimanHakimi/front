@@ -6,7 +6,7 @@ function Home(user) {
   return (
     <div>
       <div className="user-select-none">
-        <div className="lg:h-[500px] h-fit bg-center bg-cover">
+        <div className="lg:h-[550px] lg:flex lg:items-center h-fit bg-center bg-cover">
           <div className="flex flex-col h-[850px] lg:h-fit lg:flex-row w-full justify-center">
             <div className="lg:w-1/2 w-full h-1/2 lg:h-[500px] flex flex-col justify-center gap-5 px-5 lg:px-10">
               <h1 className="text-4xl leading-[1.5em] font-semibold">
