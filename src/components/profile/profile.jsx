@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../footer/footer";
 
 function Profile({ user }) {
   return (
@@ -48,6 +49,8 @@ function Profile({ user }) {
           <div className="lg:w-64 w-56 h-64 lg:h-80 border bg-cover object-cover cursor-pointer lg:hover:scale-105  duration-500 bg-[url('https://maskanyab.af/wp-content/uploads/2024/05/Three-room-house-for-sale-in-Qasaba-Kabul-592x444.jpg')]"></div>
         </div>
       </div>
+      <Footer/>
+
     </div>
   );
 }

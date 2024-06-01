@@ -1,5 +1,6 @@
 import React from "react";
 import Recent from "../recentItems/recent";
+import Footer from "../footer/footer";
 import { Link } from "react-router-dom";
 
 function Home(user) {
@@ -137,6 +138,8 @@ function Home(user) {
           </div>
         </div>
         {user.user ? <Recent /> : <></>}
+        <Footer/>
+
       </div>
     </div>
   );

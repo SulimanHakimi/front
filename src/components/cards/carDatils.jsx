@@ -46,6 +46,7 @@ export default function CarsDatils() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

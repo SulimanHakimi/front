@@ -8,7 +8,6 @@ import Nav from "./components/nav/nav";
 import HouseDatils from "./components/cards/houseDatils";
 import CarsDatils from "./components/cards/carDatils";
 import { useState, useEffect, } from "react";
-import Footer from "./components/footer/footer";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -73,7 +72,6 @@ console.log(user)
             element={user ? <Navigate to={"/"} /> : <Signup />}
           />
         </Routes>
-        <Footer/>
       </div>
     </BrowserRouter>
   );

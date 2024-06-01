@@ -45,6 +45,7 @@ export default function HouseDatils() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }
