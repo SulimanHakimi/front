@@ -3,7 +3,7 @@ import styles from "./nav.module.css";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa6";
 
-function Nav(user) {
+function Nav({user}) {
   const logout = () => {
     window.open("http://localhost:4000/auth/logout", "_self");
   };
@@ -124,11 +124,11 @@ function Nav(user) {
           </ul>
         </div>
         <div className="lg:flex hidden gap-5 items-center">
-          {user.user ? (
+          {user ? (
             <>
               <Link to={"/profile"}>
                 <img
-                  src={user.user.photos[0].value}
+                  src={user.photos[0].value}
                   className="cursor-pointer w-10 h-10 rounded-full"
                   alt=""
                 />

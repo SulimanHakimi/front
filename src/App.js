@@ -7,10 +7,11 @@ import Profile from "./components/profile/profile";
 import Nav from "./components/nav/nav";
 import HouseDatils from "./components/cards/houseDatils";
 import CarsDatils from "./components/cards/carDatils";
-import { useState, useEffect, } from "react";
+import { useState, useEffect } from "react";
+import Loding from "./components/loding/loding";
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({ user: null, isLoding: true });
 
   useEffect(() => {
     const getUser = async () => {
@@ -30,24 +31,25 @@ function App() {
 
         if (response.status === 200) {
           const resObject = await response.json();
-          setUser(resObject.user);
+          setUser({ user: resObject.user, isLoding: false });
         } else {
           throw new Error("Authentication has failed!");
         }
       } catch (err) {
         console.log(err);
+        setUser({ user: null, isLoding: false });
       }
     };
 
     getUser();
   }, []);
-console.log(user)
+  console.log(user);
   return (
     <BrowserRouter>
       <div>
-        <Nav user={user} />
+        <Nav user={user.user} />
         <Routes>
-          <Route path="/" element={<Home user={user} />} />
+          <Route path="/" element={<Home user={user.user} />} />
           <Route path="/about-us" element={<About user={user} />} />
           <Route
             path="/login"
@@ -64,7 +66,13 @@ console.log(user)
           <Route
             path="/profile"
             element={
-              user ? <Profile user={user} /> : <Navigate to={"/login"} />
+              user.isLoding ? (
+               <Loding/>
+              ) : user.user ? (
+                <Profile user={user.user} />
+              ) : (
+                <Navigate to={"/login"} />
+              )
             }
           />
           <Route
