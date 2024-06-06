@@ -9,24 +9,15 @@ import HouseDatils from "./components/cards/houseDatils";
 import CarsDatils from "./components/cards/carDatils";
 import { useState, useEffect } from "react";
 import Loding from "./components/loding/loding";
+import axios from 'axios';
 
 function App() {
   const [user, setUser] = useState({ user: null, isLoding: true });
-
   useEffect(() => {
     const getUser = async () => {
       try {
-        const response = await fetch(
-          "https://back-jade-eight.vercel.app/auth/login/success",
-          {
-            method: "GET",
-            credentials: "include",
-            headers: {
-              Accept: "application/json",
-              "Content-Type": "application/json",
-              "Access-Control-Allow-Credentials": true,
-            },
-          }
+        const response = await axios.get(
+          "https://back-jade-eight.vercel.app/auth/login/success"
         );
 
         if (response.status === 200) {
