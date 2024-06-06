@@ -9,7 +9,7 @@ import HouseDatils from "./components/cards/houseDatils";
 import CarsDatils from "./components/cards/carDatils";
 import { useState, useEffect } from "react";
 import Loding from "./components/loding/loding";
-import axios from 'axios';
+import axios from "axios";
 
 function App() {
   const [user, setUser] = useState({ user: null, isLoding: true });
@@ -17,7 +17,8 @@ function App() {
     const getUser = async () => {
       try {
         const response = await axios.get(
-          "https://back-jade-eight.vercel.app/auth/login/success"
+          "https://back-jade-eight.vercel.app/auth/login/success",
+          { withCredentials: true }
         );
 
         if (response.status === 200) {
