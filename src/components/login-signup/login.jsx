@@ -21,7 +21,7 @@ function Login() {
               </a>
             </div>
           </div>
-          <div className="flex flex-col my-5 w-3/3">
+          <form method="POST" action="http://localhost:4000/auth/login" className="flex flex-col my-5 w-3/3">
             <input
               type="email"
               className="rounded-md my-3 border px-4 py-3 focus:border-slate-500 outline-none"
@@ -32,7 +32,7 @@ function Login() {
               className="rounded-md my-3 border px-4 py-3 focus:border-slate-500 outline-none "
               placeholder="گذرواژه"
             />
-          </div>
+          </form>
           <div className="flex justify-between items-center ">
             <p className="w-1/6 text-xl">یا توسط</p>
             <span className="h-[1px] w-5/6 bg-[#D9D9D9]"></span>

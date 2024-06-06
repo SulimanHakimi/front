@@ -17,15 +17,17 @@ function Signup() {
               </a>
             </div>
           </div>
-          <div className="flex flex-col my-10">
+          <form method="POST" action="http://localhost:4000/auth/sign-up" className="flex flex-col my-10">
             <div className="flex gap-10 ">
               <input
                 type="text"
                 className="rounded-md w-96 my-3 border px-4 py-3 focus:border-slate-500 outline-none"
                 placeholder="اسم"
+                name="name"
               />
               <input
                 type="text"
+                name="famliyName"
                 className="rounded-md w-80 my-3 border px-4 py-3 focus:border-slate-500 outline-none"
                 placeholder="تخلص"
               />
@@ -33,6 +35,7 @@ function Signup() {
             <div className="flex gap-10 items-center">
               <input
                 type="email"
+                name="email"
                 className="rounded-md w-80 my-3 border px-4 py-3 focus:border-slate-500 outline-none"
                 placeholder="ایمیل"
               />
@@ -40,18 +43,15 @@ function Signup() {
                 type="password"
                 className="rounded-md w-80 my-3 border px-4 py-3 focus:border-slate-500 outline-none"
                 placeholder="گذرواژه"
+                name="password"
               />
-              <input
-                type="password"
-                className="rounded-md w-80 my-3 border px-4 py-3 focus:border-slate-500 outline-none"
-                placeholder="تایید گذرواژه"
-              />
-                <select id="userType" className="outline-none border h-fit py-2 px-3">
+             \
+                <select id="userType" name="userType" className="outline-none border h-fit py-2 px-3">
                   <option value="Normal User">کاربر عادی</option>
                   <option value="saab">فروشنده</option>
                 </select>
             </div>
-          </div>
+          </form>
           <div className="flex justify-center items-center">
             <span className="h-[1px] w-full bg-[rgb(217,217,217)]"></span>
           </div>

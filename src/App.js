@@ -50,18 +50,18 @@ function App() {
         <Nav user={user.user} />
         <Routes>
           <Route path="/" element={<Home user={user.user} />} />
-          <Route path="/about-us" element={<About user={user} />} />
+          <Route path="/about-us" element={<About user={user.user} />} />
           <Route
             path="/login"
-            element={user ? <Navigate to={"/"} /> : <Login />}
+            element={user.user ? <Navigate to={"/"} /> : <Login />}
           />
           <Route
             path="/house/:id"
-            element={user ? <HouseDatils /> : <Navigate to={"/login"} />}
+            element={user.user ? <HouseDatils /> : <Navigate to={"/login"} />}
           />
           <Route
             path="/car/:id"
-            element={user ? <CarsDatils /> : <Navigate to={"/login"} />}
+            element={user.user ? <CarsDatils /> : <Navigate to={"/login"} />}
           />
           <Route
             path="/profile"
