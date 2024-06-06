@@ -2,10 +2,10 @@ import React from "react";
 
 function Login() {
   const google = () => {
-    window.open("http://localhost:4000/auth/google", "_self");
+    window.open("https://back-jade-eight.vercel.app/auth/google", "_self");
   };
   const facebook = () => {
-    window.open("http://localhost:4000/auth/facebook", "_self");
+    window.open("https://back-jade-eight.vercel.app/auth/facebook", "_self");
   };
 
   return (
@@ -21,7 +21,11 @@ function Login() {
               </a>
             </div>
           </div>
-          <form method="POST" action="http://localhost:4000/auth/login" className="flex flex-col my-5 w-3/3">
+          <form
+            method="POST"
+            action="https://back-jade-eight.vercel.app/auth/login"
+            className="flex flex-col my-5 w-3/3"
+          >
             <input
               type="email"
               className="rounded-md my-3 border px-4 py-3 focus:border-slate-500 outline-none"

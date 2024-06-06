@@ -17,7 +17,7 @@ function App() {
     const getUser = async () => {
       try {
         const response = await fetch(
-          "http://localhost:4000/auth/login/success",
+          "https://back-jade-eight.vercel.app/auth/login/success",
           {
             method: "GET",
             credentials: "include",
@@ -67,7 +67,7 @@ function App() {
             path="/profile"
             element={
               user.isLoding ? (
-               <Loding/>
+                <Loding />
               ) : user.user ? (
                 <Profile user={user.user} />
               ) : (

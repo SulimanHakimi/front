@@ -2,7 +2,7 @@ import React from "react";
 
 function Signup() {
   const google = () => {
-    window.open("http://localhost:4000/auth/google", "_self");
+    window.open("https://back-jade-eight.vercel.app/auth/google", "_self");
   };
   return (
     <>
@@ -17,7 +17,11 @@ function Signup() {
               </a>
             </div>
           </div>
-          <form method="POST" action="http://localhost:4000/auth/sign-up" className="flex flex-col my-10">
+          <form
+            method="POST"
+            action="https://back-jade-eight.vercel.app/auth/sign-up"
+            className="flex flex-col my-10"
+          >
             <div className="flex gap-10 ">
               <input
                 type="text"
@@ -45,11 +49,15 @@ function Signup() {
                 placeholder="گذرواژه"
                 name="password"
               />
-             \
-                <select id="userType" name="userType" className="outline-none border h-fit py-2 px-3">
-                  <option value="Normal User">کاربر عادی</option>
-                  <option value="saab">فروشنده</option>
-                </select>
+              \
+              <select
+                id="userType"
+                name="userType"
+                className="outline-none border h-fit py-2 px-3"
+              >
+                <option value="Normal User">کاربر عادی</option>
+                <option value="saab">فروشنده</option>
+              </select>
             </div>
           </form>
           <div className="flex justify-center items-center">
@@ -68,7 +76,7 @@ function Signup() {
           </div>
           <div className="w-full flex justify-center">
             <button className="py-4 w-full text-white text-lg bg-gray-700 rounded-md">
-               ایجاد حساب
+              ایجاد حساب
             </button>
           </div>
         </div>

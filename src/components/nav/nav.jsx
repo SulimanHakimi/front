@@ -3,9 +3,9 @@ import styles from "./nav.module.css";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa6";
 
-function Nav({user}) {
+function Nav({ user }) {
   const logout = () => {
-    window.open("http://localhost:4000/auth/logout", "_self");
+    window.open("https://back-jade-eight.vercel.app/auth/logout", "_self");
   };
   return (
     <>
